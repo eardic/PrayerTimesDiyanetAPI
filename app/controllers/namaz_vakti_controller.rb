@@ -19,7 +19,6 @@ class NamazVaktiController < ApplicationController
     if params[:ilce]
       @browser.select_list(:name => 'City').select params[:ilce]
     end
-
     @browser.radio(:value => 'Aylik').set
     @browser.link(:text => 'Hesapla').click
     table = @browser.table(:class => 'form')
