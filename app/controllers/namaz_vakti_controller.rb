@@ -12,6 +12,7 @@ class NamazVaktiController < ApplicationController
   end
 
   def vakitler
+    puts 'Downloading table'
     @browser.select_list(:name => 'Country').select params[:ulke]
     if params[:sehir]
       @browser.select_list(:name => 'State').select params[:sehir]
@@ -22,9 +23,11 @@ class NamazVaktiController < ApplicationController
     @browser.radio(:value => 'Aylik').set
     @browser.link(:text => 'Hesapla').click
     table = @browser.table(:class => 'form')
+    puts 'Reading table'
     @content = table.trs.collect { |tr| {:tarih => tr[0].text, :imsak => tr[1].text, :gunes => tr[2].text, :ogle => tr[3].text,
                                          :ikindi => tr[4].text, :aksam => tr[5].text, :yatsi => tr[6].text, :kible => tr[7].text} }
     @content.delete_at(0)
+    puts 'Done with table'
   end
 
 end
