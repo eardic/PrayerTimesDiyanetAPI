@@ -39,6 +39,7 @@ GEM
     commonwatir (4.0.0)
     erubis (2.7.0)
     execjs (2.2.1)
+    ffi (1.9.0)
     ffi (1.9.0-x86-mingw32)
     hike (1.2.3)
     i18n (0.6.11)
@@ -60,11 +61,13 @@ GEM
     multi_json (1.10.1)
     nokogiri (1.6.3.1-x86-mingw32)
       mini_portile (= 0.6.0)
+    pg (0.17.1)
     pg (0.17.1-x86-mingw32)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
+    rack-timeout (0.0.4)
     rails (4.0.4)
       actionmailer (= 4.0.4)
       actionpack (= 4.0.4)
@@ -120,6 +123,9 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    watir (5.0.0)
+      commonwatir (~> 4)
+      watir-webdriver
     watir (5.0.0-x86-mingw32)
       commonwatir (~> 4)
       watir-classic (~> 4.0)
@@ -156,6 +162,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   pg
+  rack-timeout
   rails (= 4.0.4)
   sass-rails (~> 4.0.2)
   sdoc
