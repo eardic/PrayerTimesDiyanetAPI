@@ -1,0 +1,20 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-05 12:27:10 +0300
+Processing by NamazVaktiController#index as HTML
+  Rendered namaz_vakti/index.html.erb (4.0ms)
+Completed 200 OK in 31ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/namaz_vakti/T%C3%9CRK%C4%B0YE/KOCAEL%C4%B0/GEBZE" for 127.0.0.1 at 2014-08-05 12:27:15 +0300
+Processing by NamazVaktiController#vakitler as HTML
+  Parameters: {"ulke"=>"TÜRKİYE", "sehir"=>"KOCAELİ", "ilce"=>"GEBZE"}
+  Rendered namaz_vakti/vakitler.html.erb (3.0ms)
+Completed 200 OK in 37714ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/namaz_vakti/T%C3%9CRK%C4%B0YE/KOCAEL%C4%B0/GEBZE" for 127.0.0.1 at 2014-08-05 12:27:55 +0300
+Processing by NamazVaktiController#vakitler as HTML
+  Parameters: {"ulke"=>"TÜRKİYE", "sehir"=>"KOCAELİ", "ilce"=>"GEBZE"}
+  Rendered namaz_vakti/vakitler.html.erb (2.0ms)
+Completed 200 OK in 37474ms (Views: 4.0ms | ActiveRecord: 0.0ms)

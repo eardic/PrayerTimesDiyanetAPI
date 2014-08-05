@@ -1,0 +1,27 @@
+2014-08-05T08:56:58.703785+00:00 heroku[api]: Enable Logplex by emreardic1@gmail.com
+2014-08-05T08:56:58.703844+00:00 heroku[api]: Release v2 created by emreardic1@gmail.com
+2014-08-05T08:59:10.012127+00:00 heroku[router]: at=info code=blank-app desc="Blank app" method=GET path="/" host=ezanvakti.herokuapp.com request_id=c8ab210a-22c0-4b4d-99e0-889dbba5c544 fwd="95.8.22.122" dyno= connect= service= status=502 bytes=
+2014-08-05T09:01:09.185215+00:00 heroku[api]: Set BUILDPACK_URL config vars by emreardic1@gmail.com
+2014-08-05T09:01:09.185304+00:00 heroku[api]: Release v3 created by emreardic1@gmail.com
+2014-08-05T09:02:12.954534+00:00 heroku[api]: Set PATH config vars by emreardic1@gmail.com
+2014-08-05T09:02:12.954758+00:00 heroku[api]: Release v4 created by emreardic1@gmail.com
+2014-08-05T09:05:57+00:00 heroku[slug-compiler]: Slug compilation started
+2014-08-05T09:06:14+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-08-05T09:06:14.252945+00:00 heroku[api]: Set PATH, LD_LIBRARY_PATH config vars by emreardic1@gmail.com
+2014-08-05T09:06:14.356898+00:00 heroku[api]: Deploy 514be38 by emreardic1@gmail.com
+2014-08-05T09:06:14.146918+00:00 heroku[api]: Scale to web=1 by emreardic1@gmail.com
+2014-08-05T09:06:14.253021+00:00 heroku[api]: Release v5 created by emreardic1@gmail.com
+2014-08-05T09:06:14.356898+00:00 heroku[api]: Release v6 created by emreardic1@gmail.com
+2014-08-05T09:06:21.058465+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 55220 -e $RAILS_ENV`
+2014-08-05T09:06:22.156163+00:00 app[web.1]: /usr/bin/env: ruby.exe: No such file or directory
+2014-
+08-05T09:06:23.468108+00:00 heroku[web.1]: Process exited with status 127
+2014-08-05T09:06:23.474441+00:00 heroku[web.1]: State changed from starting to crashed
+2014-08-05T09:06:23.475093+00:00 heroku[web.1]: State changed from crashed to starting
+2014-08-05T09:06:30.131313+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 52414 -e $RAILS_ENV`
+2014-08-05T09:06:31.282751+00:00 app[web.1]: /usr/bin/env: ruby.exe: No such file or directory
+2014-08-05T09:06:32.881396+00:00 heroku[web.1]: Process exited with status 127
+2014-08-05T09:06:32.886876+00:00 heroku[web.1]: State changed from starting to crashed
+2014-08-05T09:06:34.787270+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=ezanvakti.herokuapp.com request_id=aa8245c2-ca7f-4995-bea9-290ea2b7320c fwd="54.196.27.9" dyno= connect= service= status=503 bytes=
+2014-08-05T09:06:36.491539+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=ezanvakti.herokuapp.com request_id=f9fa2ce5-b30d-4ca6-b6ee-0e171f2bcaef fwd="95.8.22.122" dyno= connect= service= status=503 bytes=
+2014-08-05T09:08:41.131512+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=ezanvakti.herokuapp.com request_id=9165d670-590c-4006-9650-25771689a142 fwd="95.8.22.122" dyno= connect= service= status=503 bytes=

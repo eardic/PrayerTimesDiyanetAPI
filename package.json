@@ -1,0 +1,21 @@
+{
+  "name": "namaz_vakti",
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.10.x",
+    "npm": ">=1.0.0"
+  },
+  "description": "== README",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@heroku.com:ezanvakti.git"
+  },
+  "author": "Emre",
+  "license": "ISC"
+}

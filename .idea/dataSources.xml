@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1340931017">
+    <data-source source="LOCAL" name="Rails DiyanetAPI: development" uuid="8f597560-82df-47d6-a0a2-a5eecfaa988e">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/db/namaz_vakti_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df9bdf9fdf93df9ddf9fdf99</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails DiyanetAPI: default" uuid="7b7ef20e-b65b-408b-bf96-5bf0b343999d">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:db/namaz_vakti</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails DiyanetAPI: test" uuid="e5e71104-2736-438b-b62b-938a28ffd96b">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/db/namaz_vakti_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df9bdf9fdf93df9ddf9fdf99</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails DiyanetAPI: production" uuid="bfb4cf32-cc28-4e61-9e26-1039f2dcc93f">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/db/namaz_vakti_production</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df9bdf9fdf93df9ddf9fdf99</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
