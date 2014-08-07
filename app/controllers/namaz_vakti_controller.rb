@@ -19,6 +19,7 @@ class NamazVaktiController < ApplicationController
     doc.css("#Country option").each do |d|
       @country[d.attr("value")] = d.text
     end
+    render json: @country
   end
 
   def sehirler
@@ -35,6 +36,7 @@ class NamazVaktiController < ApplicationController
       k.delete('Selected')
       @states[k['Value']] = k['Text']
     end
+    render json: @states
   end
 
   def ilceler
@@ -51,6 +53,7 @@ class NamazVaktiController < ApplicationController
       k.delete('Selected')
       @cities[k['Value']] = k['Text']
     end
+    render json: @cities
   end
 
   def vakitler
@@ -80,6 +83,7 @@ class NamazVaktiController < ApplicationController
       prayer_time
     end
     @prayer_times.delete_at(0)
+    render json: @prayer_times
   end
 
 end
