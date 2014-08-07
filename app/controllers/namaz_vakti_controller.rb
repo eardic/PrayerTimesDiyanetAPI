@@ -66,14 +66,19 @@ class NamazVaktiController < ApplicationController
   end
 
   def vakitler
-    cached = Rails.cache.fetch("vakitler_#{params[:country_id]}_#{params[:state_id]}_#{params[:city_id]}_#{params[:period]}", expires_in: 3.weeks) do
+    period = params[:period] ? params[:period] : 'Aylik'
+    expire = 3.weeks # Aylik icin
+    if period == 'Haftalik'
+      expire = 5.days # Haftalik icin
+    end
+    cached = Rails.cache.fetch("vakitler_#{params[:country_id]}_#{params[:state_id]}_#{params[:city_id]}_#{period}", expires_in: expire) do
       require 'net/http'
       require 'uri'
       page = Net::HTTP.post_form(URI.parse('http://www.diyanet.gov.tr/tr/PrayerTime/PrayerTimesList'),
                                  {'Country' => params[:country_id],
                                   'State' => params[:state_id],
                                   'City' => params[:city_id],
-                                  'period' => params[:period] ? params[:period] : 'Aylik'})
+                                  'period' => period})
       doc = Nokogiri::HTML(page.body)
       rows = doc.xpath('//*[@id="body"]/div/div[1]/table/tbody/tr')
       @prayer_times = rows.collect do |row|
