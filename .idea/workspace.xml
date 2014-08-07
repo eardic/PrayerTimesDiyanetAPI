@@ -13,7 +13,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/DiyanetAPI@Production__DiyanetAPI.coverage" NAME="Production: DiyanetAPI Coverage Results" MODIFIED="1407135002923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="DiyanetAPI" />
-    <SUITE FILE_PATH="coverage/DiyanetAPI@Development__DiyanetAPI.coverage" NAME="Development: DiyanetAPI Coverage Results" MODIFIED="1407418373394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="DiyanetAPI" />
+    <SUITE FILE_PATH="coverage/DiyanetAPI@Development__DiyanetAPI.coverage" NAME="Development: DiyanetAPI Coverage Results" MODIFIED="1407427173591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="DiyanetAPI" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -27,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="namaz_vakti_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="namaz_vakti_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/namaz_vakti_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="0" selection-start="2448" selection-end="2448" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1530">
+            <state line="81" column="29" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.68342644" vertical-offset="1010" max-vertical-offset="1547">
               <folding />
             </state>
           </provider>
@@ -39,16 +39,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/namaz_vakti/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="25" selection-start="340" selection-end="340" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="748">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="30" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.959144" vertical-offset="0" max-vertical-offset="1462">
+            <state line="7" column="26" selection-start="341" selection-end="341" vertical-scroll-proportion="-2.6153846" vertical-offset="51" max-vertical-offset="748">
               <folding />
             </state>
           </provider>
@@ -141,10 +132,10 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/.buildpacks" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/namaz_vakti_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/namaz_vakti/index.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/namaz_vakti_controller.rb" />
       </list>
     </option>
   </component>
@@ -516,7 +507,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7342889" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37706727" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37706727" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -801,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/namaz_vakti_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="2448" selection-end="2448" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="3" selection-start="943" selection-end="943" vertical-scroll-proportion="0.93385214" vertical-offset="132" max-vertical-offset="935">
@@ -829,16 +813,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/namaz_vakti/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="340" selection-end="340" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="748">
+        <state line="29" column="30" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.959144" vertical-offset="0" max-vertical-offset="1462">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/namaz_vakti/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="30" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.959144" vertical-offset="0" max-vertical-offset="1462">
+        <state line="7" column="26" selection-start="341" selection-end="341" vertical-scroll-proportion="-2.6153846" vertical-offset="51" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/namaz_vakti_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="29" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.68342644" vertical-offset="1010" max-vertical-offset="1547">
           <folding />
         </state>
       </provider>

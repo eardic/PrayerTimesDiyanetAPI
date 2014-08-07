@@ -79,6 +79,7 @@ class NamazVaktiController < ApplicationController
       end
       prayer_time
     end
+    @prayer_times.delete_at(0)
   end
 
 end
