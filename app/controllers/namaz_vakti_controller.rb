@@ -26,7 +26,7 @@ class NamazVaktiController < ApplicationController
   end
 
   def sehirler
-    cached = Rails.cache.fetch("sehirler#{params[:country_id]}", expires_in: 4.weeks) do
+    cached = Rails.cache.fetch("sehirler_#{params[:country_id]}", expires_in: 4.weeks) do
       require 'net/http'
       require 'uri'
       url = URI.parse("http://www.diyanet.gov.tr/PrayerTime/FillState?countryCode=#{params[:country_id]}")
@@ -93,7 +93,6 @@ class NamazVaktiController < ApplicationController
         prayer_time
       end
       @prayer_times.delete_at(0)
-      puts '5sec passed'
       @prayer_times
     end
     render json: cached
