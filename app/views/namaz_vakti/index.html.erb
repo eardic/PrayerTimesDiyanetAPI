@@ -1,2 +1,38 @@
-<h1>Diyanet Aylık Namaz Vakitleri Uygulamasına Hoşgeldiniz</h1>
+<div class="page-header text-center">
+  <h1>Ezan Vakitleri Uygulama Arayüzü</h1>
+  <p class="lead">Tüm dünya ülkeleri için Diyanet İşleri Başkanlığı'nın <strong>aylık</strong> ve <strong>haftalık</strong> ezan vakitleri.</p>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-8">
+      <h3>Ülke Listesi</h3>
+      <p>
+        <a href="http://diyanet-api.herokuapp.com/namaz_vakti/ulkeler" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/ulkeler</a>
+      </p>
 
+      <h3>Eyalet Listesi</h3>
+      <p>
+        <a href="http://diyanet-api.herokuapp.com/namaz_vakti/sehirler/2" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/sehirler/<b>ülke_kodu</b></a>
+      </p>
+      <p><em>Not: Türkiye'deki şehirler eyalet olarak geçmektedir.</em></p>
+
+      <h3>Şehir Listesi</h3>
+      <p>
+        <a href="http://diyanet-api.herokuapp.com/namaz_vakti/ilceler/500" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/ilceler/<b>şehir_kodu</b></a>
+      </p>
+      <p><em>Not: Türkiye'deki ilçeler şehir olarak geçmektedir.</em></p>
+
+      <h3>Aylık Vakit Listesi</h3>
+      <p>
+        <a href="http://diyanet-api.herokuapp.com/namaz_vakti/2/500/9146" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/<b>ülke_kodu</b>/<b>şehir_kodu</b>/<b>ilçe_kodu</b></a>
+      </p>
+    </div>
+  </div>
+</div>
+<hr>
+<footer class="text-center">
+  <p>&copy; 2014 Ezan Vakti API - version 1.0</p>
+  <p>Emre ARDIÇ</p>
+  <p>emreardic1@gmail.com</p>
+</footer>
