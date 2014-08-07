@@ -26,7 +26,7 @@ class NamazVaktiController < ApplicationController
   end
 
   def sehirler
-    cached = Rails.cache.fetch('sehirler', expires_in: 4.weeks) do
+    cached = Rails.cache.fetch("sehirler#{params[:country_id]}", expires_in: 4.weeks) do
       require 'net/http'
       require 'uri'
       url = URI.parse("http://www.diyanet.gov.tr/PrayerTime/FillState?countryCode=#{params[:country_id]}")
@@ -46,7 +46,7 @@ class NamazVaktiController < ApplicationController
   end
 
   def ilceler
-    cached = Rails.cache.fetch('ilceler', expires_in: 4.weeks) do
+    cached = Rails.cache.fetch("ilceler_#{params[:state_id]}", expires_in: 4.weeks) do
       require 'net/http'
       require 'uri'
       url = URI.parse("http://www.diyanet.gov.tr/PrayerTime/FillCity?itemId=#{params[:state_id]}")
@@ -66,7 +66,7 @@ class NamazVaktiController < ApplicationController
   end
 
   def vakitler
-    cached = Rails.cache.fetch('vakitler', expires_in: 3.weeks) do
+    cached = Rails.cache.fetch("vakitler_#{params[:country_id]}_#{params[:state_id]}_#{params[:city_id]}_#{params[:period]}", expires_in: 3.weeks) do
       require 'net/http'
       require 'uri'
       page = Net::HTTP.post_form(URI.parse('http://www.diyanet.gov.tr/tr/PrayerTime/PrayerTimesList'),
