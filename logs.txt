@@ -1,27 +1,103 @@
-2014-08-05T08:56:58.703785+00:00 heroku[api]: Enable Logplex by emreardic1@gmail.com
-2014-08-05T08:56:58.703844+00:00 heroku[api]: Release v2 created by emreardic1@gmail.com
-2014-08-05T08:59:10.012127+00:00 heroku[router]: at=info code=blank-app desc="Blank app" method=GET path="/" host=ezanvakti.herokuapp.com request_id=c8ab210a-22c0-4b4d-99e0-889dbba5c544 fwd="95.8.22.122" dyno= connect= service= status=502 bytes=
-2014-08-05T09:01:09.185215+00:00 heroku[api]: Set BUILDPACK_URL config vars by emreardic1@gmail.com
-2014-08-05T09:01:09.185304+00:00 heroku[api]: Release v3 created by emreardic1@gmail.com
-2014-08-05T09:02:12.954534+00:00 heroku[api]: Set PATH config vars by emreardic1@gmail.com
-2014-08-05T09:02:12.954758+00:00 heroku[api]: Release v4 created by emreardic1@gmail.com
-2014-08-05T09:05:57+00:00 heroku[slug-compiler]: Slug compilation started
-2014-08-05T09:06:14+00:00 heroku[slug-compiler]: Slug compilation finished
-2014-08-05T09:06:14.252945+00:00 heroku[api]: Set PATH, LD_LIBRARY_PATH config vars by emreardic1@gmail.com
-2014-08-05T09:06:14.356898+00:00 heroku[api]: Deploy 514be38 by emreardic1@gmail.com
-2014-08-05T09:06:14.146918+00:00 heroku[api]: Scale to web=1 by emreardic1@gmail.com
-2014-08-05T09:06:14.253021+00:00 heroku[api]: Release v5 created by emreardic1@gmail.com
-2014-08-05T09:06:14.356898+00:00 heroku[api]: Release v6 created by emreardic1@gmail.com
-2014-08-05T09:06:21.058465+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 55220 -e $RAILS_ENV`
-2014-08-05T09:06:22.156163+00:00 app[web.1]: /usr/bin/env: ruby.exe: No such file or directory
-2014-
-08-05T09:06:23.468108+00:00 heroku[web.1]: Process exited with status 127
-2014-08-05T09:06:23.474441+00:00 heroku[web.1]: State changed from starting to crashed
-2014-08-05T09:06:23.475093+00:00 heroku[web.1]: State changed from crashed to starting
-2014-08-05T09:06:30.131313+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 52414 -e $RAILS_ENV`
-2014-08-05T09:06:31.282751+00:00 app[web.1]: /usr/bin/env: ruby.exe: No such file or directory
-2014-08-05T09:06:32.881396+00:00 heroku[web.1]: Process exited with status 127
-2014-08-05T09:06:32.886876+00:00 heroku[web.1]: State changed from starting to crashed
-2014-08-05T09:06:34.787270+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=ezanvakti.herokuapp.com request_id=aa8245c2-ca7f-4995-bea9-290ea2b7320c fwd="54.196.27.9" dyno= connect= service= status=503 bytes=
-2014-08-05T09:06:36.491539+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=ezanvakti.herokuapp.com request_id=f9fa2ce5-b30d-4ca6-b6ee-0e171f2bcaef fwd="95.8.22.122" dyno= connect= service= status=503 bytes=
-2014-08-05T09:08:41.131512+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=ezanvakti.herokuapp.com request_id=9165d670-590c-4006-9650-25771689a142 fwd="95.8.22.122" dyno= connect= service= status=503 bytes=
+2014-08-14T20:57:05.443590+00:00 app[web.1]: I, [2014-08-14T19:17:58.018917 #2]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.1ms)
+2014-08-14T20:57:05.443612+00:00 app[web.1]: I, [2014-08-14T19:42:53.011346 #2]  INFO -- : Started HEAD "/" for 74.86.158.106 at 2014-08-14 19:42:53 +0000
+2014-08-14T20:57:05.443621+00:00 app[web.1]: I, [2014-08-14T19:54:41.984555 #2]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.1ms)
+2014-08-14T20:57:05.443628+00:00 app[web.1]: I, [2014-08-14T19:59:42.010070 #2]  INFO -- : Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+2014-08-14T20:57:05.443656+00:00 app[web.1]: I, [2014-08-14T20:33:42.148145 #2]  INFO -- : Started HEAD "/" for 74.86.158.106 at 2014-08-14 20:33:42 +0000
+2014-08-14T20:57:05.443631+00:00 app[web.1]: I, [2014-08-14T20:13:42.216627 #2]  INFO -- : Processing by NamazVaktiController#index as HTML
+2014-08-14T20:57:05.443664+00:00 app[web.1]: I, [2014-08-14T20:56:15.347457 #2]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+2014-08-14T20:57:05.443634+00:00 app[web.1]: I, [2014-08-14T20:13:42.224913 #2]  INFO -- : Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+2014-08-14T20:57:05.443643+00:00 app[web.1]: I, [2014-08-14T20:18:42.075795 #2]  INFO -- : Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+2014-08-14T20:57:05.443655+00:00 app[web.1]: I, [2014-08-14T20:28:42.243923 #2]  INFO -- : Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+2014-08-14T20:57:05.443627+00:00 app[web.1]: I, [2014-08-14T19:59:42.008158 #2]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.0ms)
+2014-08-14T20:57:05.443649+00:00 app[web.1]: I, [2014-08-14T20:23:42.142799 #2]  INFO -- : Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+2014-08-14T20:57:05.443658+00:00 app[web.1]: I, [2014-08-14T20:33:42.151362 #2]  INFO -- : Processing by NamazVaktiController#index as HTML
+2014-08-14T20:57:05.443674+00:00 app[web.1]: I, [2014-08-14T20:56:40.823427 #2]  INFO -- : Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+2014-08-14T20:57:05.443650+00:00 app[web.1]: I, [2014-08-14T20:28:42.221319 #2]  INFO -- : Started HEAD "/" for 74.86.158.106 at 2014-08-14 20:28:42 +0000
+2014-08-14T20:57:05.443622+00:00 app[web.1]: I, [2014-08-14T19:54:41.986653 #2]  INFO -- : Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+2014-08-14T20:57:05.443694+00:00 app[web.1]: I, [2014-08-14T20:57:05.439879 #2]  INFO -- : Started GET "/namaz_vakti/2/526/9414" for 81.214.5.105 at 2014-08-14 20:57:05 +0000
+2014-08-14T20:57:05.443646+00:00 app[web.1]: I, [2014-08-14T20:23:42.139991 #2]  INFO -- : Processing by NamazVaktiController#index as HTML
+2014-08-14T20:57:05.443653+00:00 app[web.1]: I, [2014-08-14T20:28:42.228856 #2]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.1ms)
+2014-08-14T20:57:05.443663+00:00 app[web.1]: I, [2014-08-14T20:56:15.325207 #2]  INFO -- : Started GET "/namaz_vakti/2/500/9146/Haftalik" for 176.42.33.121 at 2014-08-14 20:56:15 +0000
+2014-08-14T20:57:05.443686+00:00 app[web.1]: I, [2014-08-14T20:56:53.315717 #2]  INFO -- : Completed 200 
+OK in 1189ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+2014-08-14T20:57:05.443661+00:00 app[web.1]: I, [2014-08-14T20:33:42.154838 #2]  INFO -- : Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+2014-08-14T20:57:05.443639+00:00 app[web.1]: I, [2014-08-14T20:18:42.064499 #2]  INFO -- : Started HEAD "/" for 74.86.158.106 at 2014-08-14 20:18:42 +0000
+2014-08-14T20:57:05.443700+00:00 app[web.1]: I, [2014-08-14T20:57:05.443447 #2]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"526", "city_id"=>"9414"}
+2014-08-14T20:57:05.443652+00:00 app[web.1]: I, [2014-08-14T20:28:42.227970 #2]  INFO -- : Processing by NamazVaktiController#index as HTML
+2014-08-14T20:57:05.443667+00:00 app[web.1]: I, [2014-08-14T20:56:16.769365 #2]  INFO -- : Completed 200 OK in 1422ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+2014-08-14T20:57:05.443692+00:00 app[web.1]: I, [2014-08-14T20:56:54.218077 #2]  INFO -- : Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+2014-08-14T20:57:05.443669+00:00 app[web.1]: I, [2014-08-14T20:56:40.811635 #2]  INFO -- : Started GET "/namaz_vakti/sehirler/2" for 81.214.5.105 at 2014-08-14 20:56:40 +0000
+2014-08-14T20:57:05.443632+00:00 app[web.1]: I, [2014-08-14T20:13:42.217871 #2]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.1ms)
+2014-08-14T20:57:05.443670+00:00 app[web.1]: I, [2014-08-14T20:56:40.819154 #2]  INFO -- : Processing by NamazVaktiController#sehirler as HTML
+2014-08-14T20:57:05.443659+00:00 app[web.1]: I, [2014-08-14T20:33:42.153150 #2]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.1ms)
+2014-08-14T20:57:05.443645+00:00 app[web.1]: I, [2014-08-14T20:23:42.134495 #2]  INFO -- : Started HEAD "/" for 74.86.158.106 at 2014-08-14 20:23:42 +0000
+2014-08-14T20:57:05.443672+00:00 app[web.1]: I, [2014-08-14T20:56:40.819311 #2]  INFO -- :   Parameters: {"country_id"=>"2"}
+2014-08-14T20:57:05.443699+00:00 app[web.1]: I, [2014-08-14T20:57:05.443327 #2]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+2014-08-14T20:57:05.443680+00:00 app[web.1]: I, [2014-08-14T20:56:46.787853 #2]  INFO -- : Completed 200 OK in 329ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+2014-08-14T20:57:05.443647+00:00 app[web.1]: I, [2014-08-14T20:23:42.140765 #2]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.1ms)
+2014-08-14T20:57:05.443682+00:00 app[web.1]: I, [2014-08-14T20:56:52.121158 #2]  INFO -- : Started GET "/namaz_vakti/2/526/9414" for 81.214.5.105 at 2014-08-14 20:56:52 +0000
+2014-08-14T20:57:05.443666+00:00 app[web.1]: I, [2014-08-14T20:56:15.347640 #2]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"500", "city_id"=>"9146", "period"=>"Haftalik"}
+2014-08-14T20:57:05.443685+00:00 app[web.1]: I, [2014-08-14T20:56:52.126990 #2]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"526", "city_id"=>"9414"}
+2014-08-14T20:57:05.443675+00:00 app[web.1]: I, [2014-08-14T20:56:46.455523 #2]  INFO -- : Started GET "/namaz_vakti/ilceler/526" for 81.214.5.105 at 2014-08-14 20:56:46 +0000
+2014-08-14T20:57:05.443691+00:00 app[web.1]: I, [2014-08-14T20:56:54.210926 #2]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"526", "city_id"=>"9414"}
+2014-08-14T20:57:05.443677+00:00 app[web.1]: I, [2014-08-14T20:56:46.457684 #2]  INFO -- : Processing by NamazVaktiController#ilceler as HTML
+2014-08-14T20:57:05.443679+00:00 app[web.1]: I, [2014-08-14T20:56:46.457787 #2]  INFO -- :   Parameters: {"state_id"=>"526"}
+2014-08-14T20:57:05.443688+00:00 app[web.1]: I, [2014-08-14T20:56:54.206595 #2]  INFO -- : Started GET "/namaz_vakti/2/526/9414" for 81.214.5.105 at 2014-08-14 20:56:54 +0000
+2014-08-14T20:57:05.443683+00:00 app[web.1]: I, [2014-08-14T20:56:52.126868 #2]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+2014-08-14T20:57:05.443689+00:00 app[web.1]: I, [2014-08-14T20:56:54.210810 #2]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+2014-08-14T21:00:22.639425+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/sehirler/2" host=diyanet-api.herokuapp.com request_id=329511fe-acbf-48db-aa2d-d05667e48d3e fwd="78.170.8.214" dyno=web.1 connect=1ms service=14ms status=200 bytes=405
+2014-08-14T21:00:28.596355+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/ilceler/505" host=diyanet-api.herokuapp.com request_id=e05ffffd-3092-4cbf-84ba-b9b3cf92c945 fwd="78.170.8.214" dyno=web.1 connect=1ms service=353ms status=200 bytes=406
+2014-08-14T21:00:32.239507+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/505/9202" host=diyanet-api.herokuapp.com request_id=ee32ebbe-3cc4-4c41-9400-e2f3c1614d40 fwd="78.170.8.214" dyno=web.1 connect=2ms service=1501ms status=200 bytes=405
+2014-08-14T21:00:32.788450+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/505/9202" host=diyanet-api.herokuapp.com request_id=7a586774-bb6b-47a4-83fe-0698faa4dcf6 fwd="78.170.8.214" dyno=web.1 connect=1ms service=33ms status=200 bytes=405
+2014-08-14T20:56:40.915894+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/sehirler/2" host=diyanet-api.herokuapp.com request_id=529aa6f8-75bd-4fa6-ad0e-b97658ee6995 fwd="81.214.5.105" dyno=web.1 connect=23ms service=89ms status=200 bytes=420
+2014-08-14T20:56:46.861971+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/ilceler/526" host=diyanet-api.herokuapp.com request_id=87cc0eef-617a-401e-9230-240b74642620 fwd="81.214.5.105" dyno=web.1 connect=44ms service=402ms status=200 bytes=422
+2014-08-14T20:56:53.365182+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/526/9414" host=diyanet-api.herokuapp.com request_id=00865280-36b0-4318-813a-83559a803538 fwd="81.214.5.105" dyno=web.1 connect=53ms service=1228ms status=200 bytes=420
+2014-08-14T20:56:54.233980+00:00 heroku[
+router]: at=info method=GET path="/namaz_vakti/2/526/9414" host=diyanet-api.herokuapp.com request_id=49817c53-ce67-4d65-a388-5e82a288c664 fwd="81.214.5.105" dyno=web.1 connect=4ms service=24ms status=200 bytes=419
+2014-08-14T20:57:05.565580+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/526/9414" host=diyanet-api.herokuapp.com request_id=6e54e2d1-0a40-442c-8ef1-2d3e5072f843 fwd="81.214.5.105" dyno=web.1 connect=146ms service=123ms status=200 bytes=421
+2014-08-14T21:01:23.430163+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/sehirler/2" host=diyanet-api.herokuapp.com request_id=c627ee93-05cb-437d-afb3-5d8a4fa9dcc7 fwd="78.182.176.16" dyno=web.1 connect=13ms service=82ms status=200 bytes=407
+2014-08-14T21:01:45.965786+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/ilceler/539" host=diyanet-api.herokuapp.com request_id=17a7a8ee-0171-40be-9976-41ff8deb6d7d fwd="78.182.176.16" dyno=web.1 connect=11ms service=336ms status=200 bytes=409
+2014-08-14T21:01:59.353010+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/539/9541" host=diyanet-api.herokuapp.com request_id=5d808bcd-cd4f-46f3-b2c8-92d6bb120776 fwd="78.182.176.16" dyno=web.1 connect=1ms service=1081ms status=200 bytes=406
+2014-08-14T21:02:00.536188+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/539/9541" host=diyanet-api.herokuapp.com request_id=fb8d36a7-a467-4535-b9a9-965214a86c68 fwd="78.182.176.16" dyno=web.1 connect=1ms service=75ms status=200 bytes=406
+2014-08-14T21:04:35.866503+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/539/9541" host=diyanet-api.herokuapp.com request_id=75ca03b8-ffe8-42fc-b7c1-cbc37d02346c fwd="78.182.176.16" dyno=web.1 connect=1ms service=76ms status=200 bytes=406
+2014-08-14T21:04:47.889977+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/539/9541" host=diyanet-api.herokuapp.com request_id=fef32764-abb9-4f30-afb9-c53b140643a6 fwd="78.182.176.16" dyno=web.1 connect=3ms service=20ms status=200 bytes=406
+2014-08-14T21:14:37.388436+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/sehirler/2" host=diyanet-api.herokuapp.com request_id=de7b89cf-8742-47a0-ae0f-7cf6503a85e7 fwd="95.70.210.106" dyno=web.1 connect=1ms service=12ms status=200 bytes=413
+2014-08-14T21:14:47.508533+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/ilceler/539" host=diyanet-api.herokuapp.com request_id=6b9cf91e-fc74-41b8-8351-257c589e63d7 fwd="95.70.210.106" dyno=web.1 connect=1ms service=10ms status=200 bytes=414
+2014-08-14T21:14:52.258543+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/539/9545" host=diyanet-api.herokuapp.com request_id=86c22c7b-9a97-4f99-9af6-938c1dd6f709 fwd="95.70.210.106" dyno=web.1 connect=1ms service=1195ms status=200 bytes=413
+2014-08-14T21:14:52.914983+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/539/9545" host=diyanet-api.herokuapp.com request_id=88154dcb-ca37-4d18-a095-c36951fe3e8d fwd="95.70.210.106" dyno=web.1 connect=1ms service=29ms status=200 bytes=413
+2014-08-14T21:15:16.338130+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/539/9545" host=diyanet-api.herokuapp.com request_id=f004fd8b-23f3-4de7-b592-f4be5e1b4c5f fwd="95.70.210.106" dyno=web.1 connect=0ms service=26ms status=200 bytes=413
+2014-08-14T21:15:22.554125+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/539/9545" host=diyanet-api.herokuapp.com request_id=46634b62-3dd5-42f2-9776-156a956560fd fwd="95.70.210.106" dyno=web.1 connect=1ms service=121ms status=200 bytes=413
+2014-08-14T22:16:44.466527+00:00 heroku[web.1]: Idling
+2014-08-14T22:16:44.467069+00:00 heroku[web.1]: State changed from up to down
+2014-08-14T22:16:48.070006+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-08-14T22:16:48.873876+00:00 app[web.1]: [2014-08-14 22:16:48] ERROR SignalException: SIGTERM
+2014-08-14T22:16:48.873882+00:00 app[web.1]: 	/app/vendor/ruby-1.9.3/lib/ruby/1.9.1/webrick/server.rb:98:in `select'
+2014-08-14T22:16:58.850622+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2014-08-14T22:17:01.067910+00:00 heroku[web.1]: Process exited with status 137
+2014-08-14T22:16:58.850830+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2014-08-14T22:29:11.805532+00:00 heroku[web.1]: Unidling
+2014-08-14T22:29:11.805783+00:00 heroku[web.1]: State changed from down to starting
+2014-08-14T22:29:20.558814+00:00 app[web.1]: [2014-08-14 22:29:20] INFO  WEBrick 1.3.1
+2014-08-14T22:29:20.559291+00:00 app[web.1]: [2014-08-14 22:29:20] INFO  WEBrick::HTTPServer#start: pid=2 port=49109
+2014-08-14T22:29:20.558838+00:00 app[web.1]: [2014-08-14 22:29:20] INFO  ruby 1.9.3 (2014-05-14) [x86_64-linux]
+2014-08-14T22:29:15.950248+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 49109 -e production`
+2014-08-14T22:29:20.998551+00:00 heroku[web.1]: State changed from starting to up
+2014-08-14T22:29:24.607349+00:00 app[web.1]: => Rails 4.0.4 application starting in production on http://0.0.0.0:49109
+2014-08-14T22:29:24.607351+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2014-08-14T22:29:24.607342+00:00 app[web.1]: => Booting WEBrick
+2014-08-14T22:29:24.607353+00:00 app[web.1]: => Ctrl-C to shutdown server
+2014-08-14T22:29:24.607355+00:00 app[web.1]: I, [2014-08-14T22:29:21.861604 #2]  INFO -- : Started GET "/" for 95.8.20.16 at 2014-08-14 22:29:21 +0000
+2014-08-14T22:29:24.607375+00:00 app[web.1]: I, [2014-08-14T22:29:21.984297 #2]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.6ms)
+2014-08-14T22:29:24.607373+00:00 app[web.1]: I, [2014-08-14T22:29:21.960462 #2]  INFO -- : Processing by NamazVaktiController#index as HTML
+2014-08-14T22:29:25.548892+00:00 heroku[router]: at=info method=GET path="/" host=diyanet-api.herokuapp.com request_id=01646b45-52de-4841-8f6f-a8f72db64e87 fwd="95.8.20.16" dyno=web.1 connect=0ms service=3691ms status=200 bytes=654
+2014-08-14T22:29:25.567720+00:00 heroku[router]: at=info method=GET path="/" host=diyanet-api.herokuapp.com request_id=6aa2b2b4-91a2-46ef-bf86-5b32d89c6a78 fwd="95.8.20.16" dyno=web.1 connect=0ms service=674ms status=200 bytes=599
+2014-08-14T22:29:26.111537+00:00 heroku[router]: at=info method=GET path="/assets/application-929b2cb7c697b3655646c45a98490d60.css" host=diyanet-api.herokuapp.com request_id=f5144c79-8eaf-4a51-ab05-301398851a4a fwd="95.8.20.16" dyno=web.1 connect=1ms service=6ms status=304 bytes=1078
+2014-08-14T22:29:26.253031+00:00 heroku[router]: at=info method=GET path="/assets/application-eeb9307b88a1be789b6eab5869cd8b21.js" host=diyanet-api.herokuapp.com request_id=87b59058-888b-48e9-8047-a3e3afaab06d fwd="95.8.20.16" dyno=web.1 connect=0ms service=3ms status=304 bytes=1062
+2014-08-14T22:29:26.760244+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=diyanet-api.herokuapp.com request_id=f89df670-f64b-4948-8afc-9e95d8b244bd fwd="95.8.20.16" dyno=web.1 connect=3ms service=6ms status=304 bytes=955
+2014-08-14T22:29:31.935275+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/500/9146" host=diyanet-api.herokuapp.com request_id=d337a709-3011-4230-8551-33bfa92ee0e3 fwd="95.8.20.16" dyno=web.1 connect=0ms service=1803ms status=200 bytes=1082
+2014-08-14T22:29:45.770945+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/ulkeler" host=diyanet-api.herokuapp.com request_id=1dba67aa-2c3c-4e6b-b19e-905380fac887 fwd="95.8.20.16" dyno=web.1 connect=1ms service=795ms status=304 bytes=1099
+2014-08-14T22:31:09.257368+00:00 heroku[router]: at=info method=HEAD path="/" host=diyanet-api.herokuapp.com request_id=385fc80d-2b6f-44a2-b2f2-2de41156da0b fwd="74.86.158.106" dyno=web.1 connect=1ms service=18ms status=200 bytes=526
+2014-08-14T22:31:26.738878+00:00 heroku[router]: at=info method=GET path="/" host=diyanet-api.herokuapp.com request_id=20fb94ff-5a7c-42ba-a3ba-9899af7ddf9c fwd="95.8.20.16" dyno=web.1 connect=0ms service=10ms status=304 bytes=1036
+2014-08-14T22:32:31.510520+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/500/9146/Aylik" host=diyanet-api.herokuapp.com request_id=bb34cbe6-596a-437a-a124-500142d09b5b fwd="95.8.20.16" dyno=web.1 connect=1ms service=120ms status=200 bytes=1088
+2014-08-14T22:32:34.796398+00:00 heroku[router]: at=info method=GET path="/namaz_vakti/2/500/9146" host=diyanet-api.herokuapp.com request_id=71f9537c-ed82-46b2-b49b-aac40b194632 fwd="95.8.20.16" dyno=web.1 connect=1ms service=23ms status=304 bytes=1102
+2014-08-14T22:36:09.268211+00:00 heroku[router]: at=info method=HEAD path="/" host=diyanet-api.herokuapp.com request_id=5ac8a382-13bc-466d-8189-9fbe830a6441 fwd="74.86.158.106" dyno=web.1 connect=2ms service=13ms status=200 bytes=526
