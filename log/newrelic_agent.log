@@ -110,3 +110,39 @@
 [08/17/14 00:14:20 +0300 Emre (41496)] INFO : Finished instrumentation
 [08/17/14 00:14:20 +0300 Emre (41496)] INFO : Doing deferred dependency-detection before Rack startup
 [08/17/14 00:14:23 +0300 Emre (41496)] INFO : Reporting to: https://rpm.newrelic.com/accounts/742320/applications/4870670
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Starting the New Relic agent in "production" environment.
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Reading configuration from config/newrelic.yml
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Environment: production
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Dispatcher: webrick
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Application: My Application
+[08/17/14 01:56:47 +0300 Emre (46968)] WARN : Failed to determine processor count, assuming 1
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Installing ActiveRecord 4 instrumentation
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Installing Net instrumentation
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Installing deferred Rack instrumentation
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Installing Rack::Builder middleware instrumentation
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Installing Rails 3+ middleware instrumentation
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Installing Rails 4 Controller instrumentation
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Installing Rails 4 view instrumentation
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Installing Rails 4 Error instrumentation
+[08/17/14 01:56:47 +0300 Emre (46968)] INFO : Finished instrumentation
+[08/17/14 01:56:51 +0300 Emre (46968)] INFO : Doing deferred dependency-detection before Rack startup
+[08/17/14 01:56:51 +0300 Emre (46968)] INFO : Starting Agent shutdown
+[08/17/14 01:57:11 +0300 Emre (44156)] INFO : Starting the New Relic agent in "production" environment.
+[08/17/14 01:57:11 +0300 Emre (44156)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[08/17/14 01:57:11 +0300 Emre (44156)] INFO : Reading configuration from config/newrelic.yml
+[08/17/14 01:57:11 +0300 Emre (44156)] INFO : Environment: production
+[08/17/14 01:57:11 +0300 Emre (44156)] INFO : Dispatcher: webrick
+[08/17/14 01:57:11 +0300 Emre (44156)] INFO : Application: My Application
+[08/17/14 01:57:12 +0300 Emre (44156)] WARN : Failed to determine processor count, assuming 1
+[08/17/14 01:57:12 +0300 Emre (44156)] INFO : Installing ActiveRecord 4 instrumentation
+[08/17/14 01:57:12 +0300 Emre (44156)] INFO : Installing Net instrumentation
+[08/17/14 01:57:12 +0300 Emre (44156)] INFO : Installing deferred Rack instrumentation
+[08/17/14 01:57:12 +0300 Emre (44156)] INFO : Installing Rack::Builder middleware instrumentation
+[08/17/14 01:57:12 +0300 Emre (44156)] INFO : Installing Rails 3+ middleware instrumentation
+[08/17/14 01:57:12 +0300 Emre (44156)] INFO : Installing Rails 4 Controller instrumentation
+[08/17/14 01:57:15 +0300 Emre (44156)] INFO : Installing Rails 4 view instrumentation
+[08/17/14 01:57:15 +0300 Emre (44156)] INFO : Installing Rails 4 Error instrumentation
+[08/17/14 01:57:15 +0300 Emre (44156)] INFO : Finished instrumentation
+[08/17/14 01:57:16 +0300 Emre (44156)] INFO : Doing deferred dependency-detection before Rack startup
+[08/17/14 01:57:17 +0300 Emre (44156)] INFO : Reporting to: https://rpm.newrelic.com/accounts/742320/applications/4870670

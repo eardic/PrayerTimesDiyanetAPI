@@ -47,3 +47,22 @@ I, [2014-08-17T00:16:20.279098 #41496]  INFO -- : Started GET "/namaz_vakti/2/50
 I, [2014-08-17T00:16:20.281115 #41496]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
 I, [2014-08-17T00:16:20.281115 #41496]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"500", "city_id"=>"9147"}
 I, [2014-08-17T00:16:20.778461 #41496]  INFO -- : Completed 200 OK in 497ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T01:57:16.690130 #44156]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-08-17 01:57:16 +0300
+I, [2014-08-17T01:57:16.763182 #44156]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2014-08-17T01:57:16.777192 #44156]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (1.0ms)
+I, [2014-08-17T01:57:16.839246 #44156]  INFO -- : Completed 200 OK in 76ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T01:57:24.474632 #44156]  INFO -- : Started GET "/namaz_vakti/ulkeler" for 127.0.0.1 at 2014-08-17 01:57:24 +0300
+I, [2014-08-17T01:57:24.476638 #44156]  INFO -- : Processing by NamazVaktiController#ulkeler as HTML
+I, [2014-08-17T01:57:24.947953 #44156]  INFO -- : Completed 200 OK in 471ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T01:57:24.949964 #44156]  INFO -- : Started GET "/namaz_vakti/2/500/9147" for 127.0.0.1 at 2014-08-17 01:57:24 +0300
+I, [2014-08-17T01:57:24.950955 #44156]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-08-17T01:57:24.965968 #44156]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"500", "city_id"=>"9147"}
+I, [2014-08-17T01:57:25.337240 #44156]  INFO -- : Completed 200 OK in 371ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T01:57:26.540076 #44156]  INFO -- : Started GET "/namaz_vakti/2/500/9147" for 127.0.0.1 at 2014-08-17 01:57:26 +0300
+I, [2014-08-17T01:57:26.541086 #44156]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-08-17T01:57:26.541086 #44156]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"500", "city_id"=>"9147"}
+I, [2014-08-17T01:57:26.544088 #44156]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T01:57:27.094480 #44156]  INFO -- : Started GET "/namaz_vakti/2/500/9147" for 127.0.0.1 at 2014-08-17 01:57:27 +0300
+I, [2014-08-17T01:57:27.095480 #44156]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-08-17T01:57:27.095480 #44156]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"500", "city_id"=>"9147"}
+I, [2014-08-17T01:57:27.098482 #44156]  INFO -- : Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
