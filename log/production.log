@@ -1,0 +1,49 @@
+I, [2014-08-17T00:06:20.613841 #42192]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-08-17 00:06:20 +0300
+I, [2014-08-17T00:06:21.031126 #42192]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2014-08-17T00:06:21.072166 #42192]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (1.0ms)
+I, [2014-08-17T00:06:27.581745 #42192]  INFO -- : Completed 200 OK in 6551ms (Views: 6542.6ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T00:06:27.676813 #42192]  INFO -- : Started GET "/assets/application-929b2cb7c697b3655646c45a98490d60.css" for 127.0.0.1 at 2014-08-17 00:06:27 +0300
+I, [2014-08-17T00:06:27.682816 #42192]  INFO -- : Started GET "/assets/application-eeb9307b88a1be789b6eab5869cd8b21.js" for 127.0.0.1 at 2014-08-17 00:06:27 +0300
+I, [2014-08-17T00:06:27.708847 #42192]  INFO -- : Started GET "/assets/bootstrap.min-dd2397a1faa722c856db25d8c7662cf5.js" for 127.0.0.1 at 2014-08-17 00:06:27 +0300
+I, [2014-08-17T00:06:27.711838 #42192]  INFO -- : Started GET "/assets/bootstrap-theme.min-b5b591797d3aab3924663ce92308a4da.css" for 127.0.0.1 at 2014-08-17 00:06:27 +0300
+I, [2014-08-17T00:06:27.715840 #42192]  INFO -- : Started GET "/assets/bootstrap.min-63f1fc1c7621e697c30e02eda8f3a68f.css" for 127.0.0.1 at 2014-08-17 00:06:27 +0300
+I, [2014-08-17T00:06:39.170917 #42192]  INFO -- : Started GET "/namaz_vakti/ulkeler" for 127.0.0.1 at 2014-08-17 00:06:39 +0300
+I, [2014-08-17T00:06:39.171918 #42192]  INFO -- : Processing by NamazVaktiController#ulkeler as HTML
+I, [2014-08-17T00:06:40.345759 #42192]  INFO -- : Completed 200 OK in 1173ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T00:06:40.347760 #42192]  INFO -- : Started GET "/namaz_vakti/2/500/9147" for 127.0.0.1 at 2014-08-17 00:06:40 +0300
+I, [2014-08-17T00:06:40.349750 #42192]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-08-17T00:06:40.349750 #42192]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"500", "city_id"=>"9147"}
+I, [2014-08-17T00:06:40.825084 #42192]  INFO -- : Completed 200 OK in 475ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T00:10:44.187694 #42104]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-08-17 00:10:44 +0300
+I, [2014-08-17T00:10:44.252731 #42104]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2014-08-17T00:10:44.276761 #42104]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.0ms)
+I, [2014-08-17T00:10:44.305782 #42104]  INFO -- : Completed 200 OK in 52ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T00:11:56.386408 #39904]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-08-17 00:11:56 +0300
+I, [2014-08-17T00:11:56.422433 #39904]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2014-08-17T00:11:56.433441 #39904]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (1.0ms)
+I, [2014-08-17T00:11:56.476471 #39904]  INFO -- : Completed 200 OK in 53ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T00:12:06.902822 #39904]  INFO -- : Started GET "/namaz_vakti/2/500/9147" for 127.0.0.1 at 2014-08-17 00:12:06 +0300
+I, [2014-08-17T00:12:06.906824 #39904]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-08-17T00:12:06.906824 #39904]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"500", "city_id"=>"9147"}
+I, [2014-08-17T00:12:07.372154 #39904]  INFO -- : Completed 200 OK in 465ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T00:12:20.511418 #39904]  INFO -- : Started GET "/namaz_vakti/2/500/9147" for 127.0.0.1 at 2014-08-17 00:12:20 +0300
+I, [2014-08-17T00:12:20.512431 #39904]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-08-17T00:12:20.512431 #39904]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"500", "city_id"=>"9147"}
+I, [2014-08-17T00:12:20.516434 #39904]  INFO -- : Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T00:12:41.160978 #39904]  INFO -- : Started GET "/namaz_vakti/ulkeler" for 127.0.0.1 at 2014-08-17 00:12:41 +0300
+I, [2014-08-17T00:12:41.161988 #39904]  INFO -- : Processing by NamazVaktiController#ulkeler as HTML
+I, [2014-08-17T00:12:41.537258 #39904]  INFO -- : Completed 200 OK in 375ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T00:12:41.540249 #39904]  INFO -- : Started GET "/namaz_vakti/ulkeler" for 127.0.0.1 at 2014-08-17 00:12:41 +0300
+I, [2014-08-17T00:12:41.542247 #39904]  INFO -- : Processing by NamazVaktiController#ulkeler as HTML
+I, [2014-08-17T00:12:41.546263 #39904]  INFO -- : Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T00:14:21.050025 #41496]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-08-17 00:14:21 +0300
+I, [2014-08-17T00:14:21.091054 #41496]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2014-08-17T00:14:21.103064 #41496]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (1.0ms)
+I, [2014-08-17T00:14:26.778084 #41496]  INFO -- : Completed 200 OK in 5687ms (Views: 5677.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T00:16:19.911850 #41496]  INFO -- : Started GET "/namaz_vakti/ulkeler" for 127.0.0.1 at 2014-08-17 00:16:19 +0300
+I, [2014-08-17T00:16:19.913852 #41496]  INFO -- : Processing by NamazVaktiController#ulkeler as HTML
+I, [2014-08-17T00:16:20.277096 #41496]  INFO -- : Completed 200 OK in 363ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-08-17T00:16:20.279098 #41496]  INFO -- : Started GET "/namaz_vakti/2/500/9147" for 127.0.0.1 at 2014-08-17 00:16:20 +0300
+I, [2014-08-17T00:16:20.281115 #41496]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-08-17T00:16:20.281115 #41496]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"500", "city_id"=>"9147"}
+I, [2014-08-17T00:16:20.778461 #41496]  INFO -- : Completed 200 OK in 497ms (Views: 3.0ms | ActiveRecord: 0.0ms)
