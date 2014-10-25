@@ -66,3 +66,177 @@ I, [2014-08-17T01:57:27.094480 #44156]  INFO -- : Started GET "/namaz_vakti/2/50
 I, [2014-08-17T01:57:27.095480 #44156]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
 I, [2014-08-17T01:57:27.095480 #44156]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"500", "city_id"=>"9147"}
 I, [2014-08-17T01:57:27.098482 #44156]  INFO -- : Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:17:16.342056 #30732]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-10-21 20:17:16 +0300
+I, [2014-10-21T20:17:16.961495 #30732]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2014-10-21T20:17:16.996521 #30732]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (1.0ms)
+I, [2014-10-21T20:17:17.298736 #30732]  INFO -- : Completed 200 OK in 337ms (Views: 329.2ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:17:17.357777 #30732]  INFO -- : Started GET "/assets/application-929b2cb7c697b3655646c45a98490d60.css" for 127.0.0.1 at 2014-10-21 20:17:17 +0300
+I, [2014-10-21T20:17:17.364781 #30732]  INFO -- : Started GET "/assets/application-eeb9307b88a1be789b6eab5869cd8b21.js" for 127.0.0.1 at 2014-10-21 20:17:17 +0300
+I, [2014-10-21T20:17:17.385796 #30732]  INFO -- : Started GET "/assets/bootstrap.min-63f1fc1c7621e697c30e02eda8f3a68f.css" for 127.0.0.1 at 2014-10-21 20:17:17 +0300
+I, [2014-10-21T20:17:17.398806 #30732]  INFO -- : Started GET "/assets/bootstrap-theme.min-b5b591797d3aab3924663ce92308a4da.css" for 127.0.0.1 at 2014-10-21 20:17:17 +0300
+I, [2014-10-21T20:17:17.401808 #30732]  INFO -- : Started GET "/assets/bootstrap.min-dd2397a1faa722c856db25d8c7662cf5.js" for 127.0.0.1 at 2014-10-21 20:17:17 +0300
+I, [2014-10-21T20:17:29.658791 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:17:29 +0300
+I, [2014-10-21T20:17:29.674802 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:17:29.674802 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:17:30.410322 #30732]  INFO -- : Completed 200 OK in 736ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:17:40.563791 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:17:40 +0300
+I, [2014-10-21T20:17:40.564792 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:17:40.565810 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:17:40.568808 #30732]  INFO -- : Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:44:24.466312 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:44:24 +0300
+I, [2014-10-21T20:44:24.519350 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:44:24.519350 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:44:24.522351 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:50:23.231783 #30732]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-10-21 20:50:23 +0300
+I, [2014-10-21T20:50:23.233787 #30732]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2014-10-21T20:50:23.234787 #30732]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (1.0ms)
+I, [2014-10-21T20:50:23.236799 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:50:23.943288 #30732]  INFO -- : Started GET "/assets/application-eeb9307b88a1be789b6eab5869cd8b21.js" for 127.0.0.1 at 2014-10-21 20:50:23 +0300
+I, [2014-10-21T20:50:23.967313 #30732]  INFO -- : Started GET "/assets/application-929b2cb7c697b3655646c45a98490d60.css" for 127.0.0.1 at 2014-10-21 20:50:23 +0300
+I, [2014-10-21T20:50:24.068374 #30732]  INFO -- : Started GET "/assets/bootstrap.min-63f1fc1c7621e697c30e02eda8f3a68f.css" for 127.0.0.1 at 2014-10-21 20:50:24 +0300
+I, [2014-10-21T20:50:24.146430 #30732]  INFO -- : Started GET "/assets/bootstrap-theme.min-b5b591797d3aab3924663ce92308a4da.css" for 127.0.0.1 at 2014-10-21 20:50:24 +0300
+I, [2014-10-21T20:50:24.149432 #30732]  INFO -- : Started GET "/assets/bootstrap.min-dd2397a1faa722c856db25d8c7662cf5.js" for 127.0.0.1 at 2014-10-21 20:50:24 +0300
+I, [2014-10-21T20:50:47.313263 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:50:47 +0300
+I, [2014-10-21T20:50:47.314276 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:50:47.314276 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:50:47.317278 #30732]  INFO -- : Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:50:53.246573 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:50:53 +0300
+I, [2014-10-21T20:50:53.247563 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:50:53.247563 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:50:53.250564 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:50:53.769930 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:50:53 +0300
+I, [2014-10-21T20:50:53.770931 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:50:53.770931 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:50:53.773934 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:50:54.036814 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:50:54 +0300
+I, [2014-10-21T20:50:54.037814 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:50:54.037814 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:50:54.040816 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:50:54.259982 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:50:54 +0300
+I, [2014-10-21T20:50:54.260982 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:50:54.260982 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:50:54.263987 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:50:54.446356 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:50:54 +0300
+I, [2014-10-21T20:50:54.447358 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:50:54.447358 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:50:54.450360 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:50:55.630281 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:50:55 +0300
+I, [2014-10-21T20:50:55.631283 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:50:55.631283 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:50:55.634284 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:50:55.703323 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:50:55 +0300
+I, [2014-10-21T20:50:55.705325 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:50:55.705325 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:50:55.713331 #30732]  INFO -- : Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:50:56.545065 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:50:56 +0300
+I, [2014-10-21T20:50:56.546064 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:50:56.546064 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:50:56.549066 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:50:58.003216 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:50:58 +0300
+I, [2014-10-21T20:50:58.004216 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:50:58.021217 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:50:58.024218 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:51:37.796034 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:51:37 +0300
+I, [2014-10-21T20:51:37.797036 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:51:37.797036 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:51:37.800037 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:52:16.535120 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:52:16 +0300
+I, [2014-10-21T20:52:16.537120 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:52:16.537120 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:52:16.540122 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:52:30.337855 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:52:30 +0300
+I, [2014-10-21T20:52:30.338856 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:52:30.338856 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:52:30.341858 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:52:31.971561 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:52:31 +0300
+I, [2014-10-21T20:52:31.972554 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:52:31.972554 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:52:31.975556 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:52:32.734843 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:52:32 +0300
+I, [2014-10-21T20:52:32.735856 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:52:32.735856 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:52:32.738858 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:52:49.540405 #30732]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-10-21 20:52:49 +0300
+I, [2014-10-21T20:52:49.542406 #30732]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2014-10-21T20:52:49.543407 #30732]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.0ms)
+I, [2014-10-21T20:52:49.545409 #30732]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:52:53.335553 #30732]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:52:53 +0300
+I, [2014-10-21T20:52:53.336554 #30732]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:52:53.337555 #30732]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:52:53.340556 #30732]  INFO -- : Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:54:06.626008 #31648]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-10-21 20:54:06 +0300
+I, [2014-10-21T20:54:06.766105 #31648]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2014-10-21T20:54:06.778125 #31648]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.0ms)
+I, [2014-10-21T20:54:17.200479 #31648]  INFO -- : Completed 200 OK in 10433ms (Views: 10425.4ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:54:17.203481 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:54:17 +0300
+I, [2014-10-21T20:54:17.205483 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:54:17.205483 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:54:18.012054 #31648]  INFO -- : Completed 200 OK in 807ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:54:44.535406 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:54:44 +0300
+I, [2014-10-21T20:54:44.536408 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:54:44.537408 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:54:45.120832 #31648]  INFO -- : Completed 200 OK in 583ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:55:57.725952 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:55:57 +0300
+I, [2014-10-21T20:55:57.727957 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:55:57.727957 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:55:58.269348 #31648]  INFO -- : Completed 200 OK in 541ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:55:59.253642 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:55:59 +0300
+I, [2014-10-21T20:55:59.254643 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:55:59.254643 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:55:59.255643 #31648]  INFO -- : Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:56:01.032227 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:56:01 +0300
+I, [2014-10-21T20:56:01.033218 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:56:01.033218 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:56:01.584619 #31648]  INFO -- : Completed 200 OK in 550ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:56:21.915329 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:56:21 +0300
+I, [2014-10-21T20:56:21.917330 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:56:21.917330 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:56:36.261470 #31648]  INFO -- : Completed 200 OK in 14344ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:56:45.593079 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:56:45 +0300
+I, [2014-10-21T20:56:45.594074 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:56:45.594074 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:57:03.321617 #31648]  INFO -- : Completed 200 OK in 17728ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:57:18.391376 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9873" for 127.0.0.1 at 2014-10-21 20:57:18 +0300
+I, [2014-10-21T20:57:18.392374 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:57:18.392374 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9873"}
+I, [2014-10-21T20:57:19.040844 #31648]  INFO -- : Completed 200 OK in 648ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:58:36.003866 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9873" for 127.0.0.1 at 2014-10-21 20:58:36 +0300
+I, [2014-10-21T20:58:36.005857 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:58:36.005857 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9873"}
+I, [2014-10-21T20:58:36.578263 #31648]  INFO -- : Completed 200 OK in 572ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:58:37.844043 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9873" for 127.0.0.1 at 2014-10-21 20:58:37 +0300
+I, [2014-10-21T20:58:37.845044 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:58:37.845044 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9873"}
+I, [2014-10-21T20:58:39.775397 #31648]  INFO -- : Completed 200 OK in 1929ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:58:45.013825 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9873" for 127.0.0.1 at 2014-10-21 20:58:45 +0300
+I, [2014-10-21T20:58:45.014825 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:58:45.014825 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9873"}
+I, [2014-10-21T20:58:45.658278 #31648]  INFO -- : Completed 200 OK in 643ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:59:06.183269 #31648]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-10-21 20:59:06 +0300
+I, [2014-10-21T20:59:06.184270 #31648]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2014-10-21T20:59:06.186272 #31648]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.0ms)
+I, [2014-10-21T20:59:06.188272 #31648]  INFO -- : Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:59:08.675782 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9873" for 127.0.0.1 at 2014-10-21 20:59:08 +0300
+I, [2014-10-21T20:59:08.676774 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:59:08.676774 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9873"}
+I, [2014-10-21T20:59:09.234166 #31648]  INFO -- : Completed 200 OK in 557ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:59:18.964986 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9873" for 127.0.0.1 at 2014-10-21 20:59:18 +0300
+I, [2014-10-21T20:59:18.965985 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:59:18.965985 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9873"}
+I, [2014-10-21T20:59:19.620460 #31648]  INFO -- : Completed 200 OK in 654ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:59:21.766873 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9873" for 127.0.0.1 at 2014-10-21 20:59:21 +0300
+I, [2014-10-21T20:59:21.767866 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:59:21.767866 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9873"}
+I, [2014-10-21T20:59:22.361296 #31648]  INFO -- : Completed 200 OK in 592ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:59:28.118298 #31648]  INFO -- : Started GET "/namaz_vakti/2/572/9873" for 127.0.0.1 at 2014-10-21 20:59:28 +0300
+I, [2014-10-21T20:59:28.119299 #31648]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:59:28.119299 #31648]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9873"}
+I, [2014-10-21T20:59:28.623655 #31648]  INFO -- : Completed 200 OK in 504ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:59:53.602277 #27044]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-10-21 20:59:53 +0300
+I, [2014-10-21T20:59:53.663340 #27044]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2014-10-21T20:59:53.674342 #27044]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (0.0ms)
+I, [2014-10-21T20:59:59.327324 #27044]  INFO -- : Completed 200 OK in 5664ms (Views: 5655.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-21T20:59:59.330326 #27044]  INFO -- : Started GET "/namaz_vakti/2/572/9874" for 127.0.0.1 at 2014-10-21 20:59:59 +0300
+I, [2014-10-21T20:59:59.332328 #27044]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
+I, [2014-10-21T20:59:59.332328 #27044]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
+I, [2014-10-21T20:59:59.830696 #27044]  INFO -- : Completed 200 OK in 497ms (Views: 2.0ms | ActiveRecord: 0.0ms)

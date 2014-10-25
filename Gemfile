@@ -1,14 +1,16 @@
 source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.4'
+gem 'rails', '4.1.6'
 
-ruby '1.9.3'
+ruby '2.1.3'
 
 gem 'nokogiri'
 
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+gem 'mysql2'
+
+gem "tzinfo-data"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -42,10 +44,13 @@ end
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+#gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano', '~> 3.1.0'
+gem 'capistrano-bundler', '~> 1.1.2'
+gem 'capistrano-rails', '~> 1.1.1'
 
+gem 'capistrano-rvm', github: "capistrano/rvm"
 # Use debugger
 # gem 'debugger', group: [:development, :test]
