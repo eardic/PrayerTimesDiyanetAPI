@@ -5,7 +5,8 @@
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1:3306/d_ezanvakti</jdbc-url>
-      <user-name>root</user-name>
+      <user-name>eardic</user-name>
+      <user-password>df9bdf9fdf93df9ddf9fdf99</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails DiyanetAPI: default" uuid="7b7ef20e-b65b-408b-bf96-5bf0b343999d">
@@ -18,7 +19,8 @@
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1:3306/t_ezanvakti</jdbc-url>
-      <user-name>root</user-name>
+      <user-name>eardic</user-name>
+      <user-password>df9bdf9fdf93df9ddf9fdf99</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails DiyanetAPI: production" uuid="bfb4cf32-cc28-4e61-9e26-1039f2dcc93f">

@@ -1,6 +1,0 @@
-Running `rake db:migrate` attached to terminal... up, run.5205
-<internal:lib/rubygems/custom_require>:29:in `require': no such file to load -- bundler/setup (LoadError)
-	from <internal:lib/rubygems/custom_require>:29:in `require'
-	from /app/config/boot.rb:4:in `<top (required)>'
-	from /app/bin/rake:2:in `require_relative'
-	from /app/bin/rake:2:in `<main>'
