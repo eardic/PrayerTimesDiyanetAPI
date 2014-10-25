@@ -27,7 +27,8 @@
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1:3306/p_ezanvakti</jdbc-url>
-      <user-name>root</user-name>
+      <user-name>eardic</user-name>
+      <user-password>df9bdf9fdf93df9ddf9fdf99</user-password>
       <libraries />
     </data-source>
   </component>
