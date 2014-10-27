@@ -555,3 +555,23 @@
 [10/27/14 23:13:14 +0200 Emre (56436)] INFO : Finished instrumentation
 [10/27/14 23:13:15 +0200 Emre (56436)] INFO : Reporting to: https://rpm.newrelic.com/accounts/742320/applications/5563424
 [10/27/14 23:13:16 +0200 Emre (56436)] INFO : Doing deferred dependency-detection before Rack startup
+[10/28/14 00:04:34 +0200 Emre (56436)] INFO : Starting Agent shutdown
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Starting the New Relic agent in "production" environment.
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Reading configuration from config/newrelic.yml (D:/RubymineProjects/ezanvakti)
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Environment: production
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Dispatcher: webrick
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Application: My Application
+[10/28/14 00:04:39 +0200 Emre (57144)] WARN : Failed to determine processor count, assuming 1
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Installing ActiveRecord 4 instrumentation
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Installing Net instrumentation
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Installing deferred Rack instrumentation
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Installing Rack::Builder middleware instrumentation
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Installing Rails 3+ middleware instrumentation
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Installing Rails 4 Controller instrumentation
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Installing Rails 4 view instrumentation
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Installing Rails 4 Error instrumentation
+[10/28/14 00:04:39 +0200 Emre (57144)] INFO : Finished instrumentation
+[10/28/14 00:04:45 +0200 Emre (57144)] INFO : Doing deferred dependency-detection before Rack startup
+[10/28/14 00:04:46 +0200 Emre (57144)] INFO : Reporting to: https://rpm.newrelic.com/accounts/742320/applications/4870670
+[10/28/14 00:05:55 +0200 Emre (57144)] INFO : Starting Agent shutdown

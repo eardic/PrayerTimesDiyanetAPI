@@ -240,3 +240,16 @@ I, [2014-10-21T20:59:59.330326 #27044]  INFO -- : Started GET "/namaz_vakti/2/57
 I, [2014-10-21T20:59:59.332328 #27044]  INFO -- : Processing by NamazVaktiController#vakitler as HTML
 I, [2014-10-21T20:59:59.332328 #27044]  INFO -- :   Parameters: {"country_id"=>"2", "state_id"=>"572", "city_id"=>"9874"}
 I, [2014-10-21T20:59:59.830696 #27044]  INFO -- : Completed 200 OK in 497ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2014-10-28T00:04:46.039640 #57144]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-10-28 00:04:46 +0200
+I, [2014-10-28T00:04:46.059654 #57144]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2014-10-28T00:04:46.070662 #57144]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (1.0ms)
+I, [2014-10-28T00:04:51.386413 #57144]  INFO -- : Completed 200 OK in 5327ms (Views: 5318.8ms | ActiveRecord: 0.0ms)
+I, [2014-10-28T00:04:51.458464 #57144]  INFO -- : Started GET "/assets/bootstrap.min-f8f32cd9d1b6d362d7e072a7ab537528.css" for 127.0.0.1 at 2014-10-28 00:04:51 +0200
+I, [2014-10-28T00:04:51.469472 #57144]  INFO -- : Started GET "/assets/bootstrap-theme.min-2dd4df56e4989add979f113e43ddd584.css" for 127.0.0.1 at 2014-10-28 00:04:51 +0200
+I, [2014-10-28T00:04:51.474475 #57144]  INFO -- : Started GET "/assets/application-9629ff03eb2406ec7b9097db89e72264.css" for 127.0.0.1 at 2014-10-28 00:04:51 +0200
+I, [2014-10-28T00:04:51.481481 #57144]  INFO -- : Started GET "/assets/application-753033fb873bec9f993f4bdadab8ec4d.js" for 127.0.0.1 at 2014-10-28 00:04:51 +0200
+I, [2014-10-28T00:04:51.494491 #57144]  INFO -- : Started GET "/assets/bootstrap.min-56fdc10ea53a831cce6510d530d1ccd3.js" for 127.0.0.1 at 2014-10-28 00:04:51 +0200
+I, [2014-10-28T00:04:53.639483 #57144]  INFO -- : Started GET "/sehirler/2" for 127.0.0.1 at 2014-10-28 00:04:53 +0200
+I, [2014-10-28T00:04:53.641485 #57144]  INFO -- : Processing by NamazVaktiController#sehirler as HTML
+I, [2014-10-28T00:04:53.641485 #57144]  INFO -- :   Parameters: {"country_id"=>"2"}
+I, [2014-10-28T00:04:53.810603 #57144]  INFO -- : Completed 200 OK in 169ms (Views: 0.0ms | ActiveRecord: 0.0ms)
