@@ -12,12 +12,12 @@ require 'mina/rvm'    # for rvm support. (http://rvm.io)
 
 set :term_mode, nil
 set :domain, 'eardic.com'
-set :deploy_to, '/home/eardic/ezanvakti'
-set :repository, 'git@bitbucket.org:viplime/ezan-vakti.git'
+set :deploy_to, '/var/www/html/ezanvakti'
+set :repository, 'https://viplime@bitbucket.org/viplime/ezan-vakti.git'
 set :branch, 'master'
 
 # For system-wide RVM install.
-   set :rvm_path, '/usr/local/rvm/bin/rvm'
+   set :rvm_path, '/home/eardic/.rvm/bin/rvm'
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
