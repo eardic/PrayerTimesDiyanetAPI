@@ -4,11 +4,11 @@ DiyanetAPI::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'namaz_vakti#index'
-  get 'namaz_vakti/ulkeler'
-  get '/namaz_vakti/sehirler/:country_id', to: 'namaz_vakti#sehirler'
-  get '/namaz_vakti/ilceler/:state_id', to: 'namaz_vakti#ilceler'
-  get '/namaz_vakti/:country_id/:state_id/:city_id', to: 'namaz_vakti#vakitler'
-  get '/namaz_vakti/:country_id/:state_id/:city_id/:period', to: 'namaz_vakti#vakitler'
+  get '/ulkeler', to: 'namaz_vakti#ulkeler'
+  get '/sehirler/:country_id', to: 'namaz_vakti#sehirler'
+  get '/ilceler/:state_id', to: 'namaz_vakti#ilceler'
+  get '/:country_id/:state_id/:city_id', to: 'namaz_vakti#vakitler'
+  get '/:country_id/:state_id/:city_id/:period', to: 'namaz_vakti#vakitler'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

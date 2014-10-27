@@ -1,5 +1,8 @@
 #!/bin/env ruby
 # encoding: utf-8
+require 'net/http'
+require 'uri'
+require 'nokogiri'
 class NamazVaktiController < ApplicationController
 
   def index
@@ -8,8 +11,6 @@ class NamazVaktiController < ApplicationController
 
   def ulkeler
     cached = Rails.cache.fetch('ulkeler', expires_in: 4.weeks) do
-      require 'net/http'
-      require 'uri'
       url = URI.parse('http://www.diyanet.gov.tr/tr/PrayerTime/WorldPrayerTimes')
       req = Net::HTTP::Get.new(url.to_s)
       page = Net::HTTP.start(url.host, url.port) { |http|
@@ -27,8 +28,6 @@ class NamazVaktiController < ApplicationController
 
   def sehirler
     cached = Rails.cache.fetch("sehirler_#{params[:country_id]}", expires_in: 4.weeks) do
-      require 'net/http'
-      require 'uri'
       url = URI.parse("http://www.diyanet.gov.tr/PrayerTime/FillState?countryCode=#{params[:country_id]}")
       req = Net::HTTP::Get.new(url.to_s)
       page = Net::HTTP.start(url.host, url.port) { |http|
@@ -47,8 +46,6 @@ class NamazVaktiController < ApplicationController
 
   def ilceler
     cached = Rails.cache.fetch("ilceler_#{params[:state_id]}", expires_in: 4.weeks) do
-      require 'net/http'
-      require 'uri'
       url = URI.parse("http://www.diyanet.gov.tr/PrayerTime/FillCity?itemId=#{params[:state_id]}")
       req = Net::HTTP::Get.new(url.to_s)
       page = Net::HTTP.start(url.host, url.port) { |http|
@@ -72,8 +69,6 @@ class NamazVaktiController < ApplicationController
       expire = 5.days # Haftalik icin
     end
     cached = Rails.cache.fetch("vakitler_#{params[:country_id]}_#{params[:state_id]}_#{params[:city_id]}_#{period}", expires_in: expire) do
-      require 'net/http'
-      require 'uri'
       page = Net::HTTP.post_form(URI.parse('http://www.diyanet.gov.tr/tr/PrayerTime/PrayerTimesList'),
                                  {'Country' => params[:country_id],
                                   'State' => params[:state_id],
