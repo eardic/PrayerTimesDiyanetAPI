@@ -9,33 +9,33 @@
     <div class="col-md-8">
       <h3>Ülke Listesi</h3>
       <p>
-        <a href="/ulkeler" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/ulkeler</a>
+        <a href="<%= request.original_url %>ulkeler" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/ulkeler</a>
       </p>
 
       <h3>Eyalet Listesi</h3>
       <p>
-        <a href="/sehirler/2" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/sehirler/<b>ülke_kodu</b></a>
+        <a href="<%= request.original_url %>sehirler/2" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/sehirler/<b>ülke_kodu</b></a>
       </p>
       <p><em>Not: Türkiye'deki şehirler eyalet olarak geçmektedir.</em></p>
 
       <h3>Şehir Listesi</h3>
       <p>
-        <a href="/ilceler/500" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/ilceler/<b>şehir_kodu</b></a>
+        <a href="<%= request.original_url %>ilceler/500" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/ilceler/<b>şehir_kodu</b></a>
       </p>
       <p><em>Not: Türkiye'deki ilçeler şehir olarak geçmektedir.</em></p>
 
       <h3>Aylık Vakit Listesi</h3>
       <p>
-        <a href="/2/500/9146" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/<b>ülke_kodu</b>/<b>şehir_kodu</b>/<b>ilçe_kodu</b></a>
+        <a href="<%= request.original_url %>2/500/9146" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/<b>ülke_kodu</b>/<b>şehir_kodu</b>/<b>ilçe_kodu</b></a>
       </p>
       <p>Veya</p>
       <p>
-        <a href="/2/500/9146/Aylik" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/<b>ülke_kodu</b>/<b>şehir_kodu</b>/<b>ilçe_kodu</b>/<b>Aylik</b></a>
+        <a href="<%= request.original_url %>2/500/9146/Aylik" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/<b>ülke_kodu</b>/<b>şehir_kodu</b>/<b>ilçe_kodu</b>/<b>Aylik</b></a>
       </p>
 
       <h3>Haftalık Vakit Listesi</h3>
       <p>
-        <a href="http://diyanet-api.herokuapp.com/namaz_vakti/2/500/9146/Haftalik" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/<b>ülke_kodu</b>/<b>şehir_kodu</b>/<b>ilçe_kodu</b>/<b>Haftalik</b></a>
+        <a href="<%= request.original_url %>2/500/9146/Haftalik" target="_blank">http://diyanet-api.herokuapp.com/namaz_vakti/<b>ülke_kodu</b>/<b>şehir_kodu</b>/<b>ilçe_kodu</b>/<b>Haftalik</b></a>
       </p>
     </div>
   </div>
