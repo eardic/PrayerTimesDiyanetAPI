@@ -46,9 +46,5 @@ end
 # Use unicorn as the app server
 #gem 'unicorn'
 
-# Use Capistrano for deployment
-group :development do
-  gem 'mina'
-end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
