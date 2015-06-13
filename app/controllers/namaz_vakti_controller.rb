@@ -2,7 +2,8 @@
 # encoding: utf-8
 require 'net/http'
 require 'uri'
-require 'nokogiri'
+require 'hpricot'
+
 class NamazVaktiController < ApplicationController
 
   def index
@@ -16,14 +17,14 @@ class NamazVaktiController < ApplicationController
       page = Net::HTTP.start(url.host, url.port) { |http|
         http.request(req)
       }
-      doc = Nokogiri::HTML(page.body)
+      doc = Hpricot(page.body)
       @country = {}
-      doc.css("#Country option").each do |d|
-        @country[d.attr("value")] = d.text
+      doc.search("#Country option").each do |d|
+        @country[d.attributes["value"]] = d.inner_html
       end
       @country
     end
-    render json: cached
+    render json: @country
   end
 
   def sehirler
@@ -61,34 +62,52 @@ class NamazVaktiController < ApplicationController
     end
     render json: cached
   end
-
+  
   def vakitler
     period = params[:period] ? params[:period] : 'Aylik'
-    expire = 3.weeks # Aylik icin
+    expire = 2.weeks # Aylik icin
     if period == 'Haftalik'
-      expire = 5.days # Haftalik icin
+      expire = 3.days # Haftalik icin
     end
     cached = Rails.cache.fetch("vakitler_#{params[:country_id]}_#{params[:state_id]}_#{params[:city_id]}_#{period}", expires_in: expire) do
-      page = Net::HTTP.post_form(URI.parse('http://www.diyanet.gov.tr/tr/PrayerTime/PrayerTimesList'),
-                                 {'Country' => params[:country_id],
-                                  'State' => params[:state_id],
-                                  'City' => params[:city_id],
-                                  'period' => period})
-      doc = Nokogiri::HTML(page.body)
-      rows = doc.xpath('//*[@id="body"]/div/div[1]/table/tbody/tr')
+      getUrl = URI.parse("http://www.diyanet.gov.tr/tr/PrayerTime/WorldPrayerTimes")
+      postUrl = URI.parse('http://www.diyanet.gov.tr/tr/PrayerTime/PrayerTimesList')
+      postResponse = Net::HTTP.start(getUrl.host, getUrl.port) { |http|
+        # Get Security parameters
+        getReq = Net::HTTP::Get.new(getUrl.to_s)
+        getResponse = http.request(getReq)
+        cookies = getResponse.response['set-cookie']
+        getDoc = Hpricot(getResponse.body)
+        as_sfid = getDoc.at("input[@name='as_sfid']")["value"]
+        as_fid = getDoc.at("input[@name='as_fid']")["value"]
+        #puts "Sec Params:#{as_sfid}  #{as_fid}"
+        # Get Times Table
+        postReq =  Net::HTTP::Post.new(postUrl.to_s)
+        postReq['Cookie'] = cookies
+        postReq.set_form_data( {'Country' => params[:country_id],
+                                'State' => params[:state_id],
+                                'City' => params[:city_id],
+                                'period' => period,
+                                'as_sfid' => as_sfid,
+                                'as_fid' => as_fid } )
+        http.request(postReq)
+      }
+
+      doc = Hpricot(postResponse.body)
+      rows = doc.search('//*[@id="body"]/div/div[1]/table/tbody/tr')
       @prayer_times = rows.collect do |row|
         prayer_time = {}
         [
-            [:tarih, 'td[1]/text()'],
-            [:imsak, 'td[2]/text()'],
-            [:gunes, 'td[3]/text()'],
-            [:ogle, 'td[4]/text()'],
-            [:ikindi, 'td[5]/text()'],
-            [:aksam, 'td[6]/text()'],
-            [:yatsi, 'td[7]/text()'],
-            [:kible, 'td[8]/text()']
+            [:tarih, 'td[1]'],
+            [:imsak, 'td[2]'],
+            [:gunes, 'td[3]'],
+            [:ogle,  'td[4]'],
+            [:ikindi,'td[5]'],
+            [:aksam, 'td[6]'],
+            [:yatsi, 'td[7]'],
+            [:kible, 'td[8]']
         ].each do |name, xpath|
-          prayer_time[name] = row.at_xpath(xpath).to_s.strip
+          prayer_time[name] = row.search(xpath).inner_html.to_s.strip
         end
         prayer_time
       end
