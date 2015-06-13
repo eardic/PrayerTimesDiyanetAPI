@@ -24,7 +24,7 @@ class NamazVaktiController < ApplicationController
       end
       @country
     end
-    render json: @country
+    render json: cached
   end
 
   def sehirler
