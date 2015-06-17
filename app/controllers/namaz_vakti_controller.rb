@@ -78,8 +78,14 @@ class NamazVaktiController < ApplicationController
         getResponse = http.request(getReq)
         cookies = getResponse.response['set-cookie']
         getDoc = Hpricot(getResponse.body)
-        as_sfid = getDoc.at("input[@name='as_sfid']")["value"]
-        as_fid = getDoc.at("input[@name='as_fid']")["value"]
+        sfidElem = getDoc.at("input[@name='as_sfid']")
+        fidElem = getDoc.at("input[@name='as_fid']")
+        if !sfidElem.nil?
+          as_sfid = sfidElem["value"]
+        end
+        if !fidElem.nil?
+          as_fid = fidElem["value"]
+        end
         #puts "Sec Params:#{as_sfid}  #{as_fid}"
         # Get Times Table
         postReq =  Net::HTTP::Post.new(postUrl.to_s)
