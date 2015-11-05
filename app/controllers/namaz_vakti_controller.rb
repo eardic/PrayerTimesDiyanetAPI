@@ -1,7 +1,8 @@
 #!/bin/env ruby
 # encoding: utf-8
-require 'net/http'
+#require 'net/http'
 require 'uri'
+require 'rest-client'
 require 'hpricot'
 
 class NamazVaktiController < ApplicationController
@@ -12,12 +13,13 @@ class NamazVaktiController < ApplicationController
 
   def ulkeler
     cached = Rails.cache.fetch('ulkeler', expires_in: 4.weeks) do
-      url = URI.parse('http://www.diyanet.gov.tr/tr/PrayerTime/WorldPrayerTimes')
-      req = Net::HTTP::Get.new(url.to_s)
-      page = Net::HTTP.start(url.host, url.port) { |http|
-        http.request(req)
-      }
-      doc = Hpricot(page.body)
+      #url = URI.parse('http://www.diyanet.gov.tr/tr/PrayerTime/WorldPrayerTimes')
+      #req = Net::HTTP::Get.new(url.to_s)
+      #page = Net::HTTP.start(url.host, url.port) { |http|
+      #  http.request(req)
+      #}
+      response = RestClient.get 'http://www.diyanet.gov.tr/tr/PrayerTime/WorldPrayerTimes'
+      doc = Hpricot(response)#page.body
       @country = {}
       doc.search("#Country option").each do |d|
         @country[d.attributes["value"]] = d.inner_html
@@ -29,13 +31,14 @@ class NamazVaktiController < ApplicationController
 
   def sehirler
     cached = Rails.cache.fetch("sehirler_#{params[:country_id]}", expires_in: 4.weeks) do
-      url = URI.parse("http://www.diyanet.gov.tr/PrayerTime/FillState?countryCode=#{params[:country_id]}")
-      req = Net::HTTP::Get.new(url.to_s)
-      page = Net::HTTP.start(url.host, url.port) { |http|
-        http.request(req)
-      }
+      #url = URI.parse("http://www.diyanet.gov.tr/PrayerTime/FillState?countryCode=#{params[:country_id]}")
+      #req = Net::HTTP::Get.new(url.to_s)
+      #page = Net::HTTP.start(url.host, url.port) { |http|
+      #  http.request(req)
+      #}
+      response = RestClient.get("http://www.diyanet.gov.tr/PrayerTime/FillState?countryCode=#{params[:country_id]}")
       @states = {}
-      state_array = JSON.parse(page.body.to_s)
+      state_array = JSON.parse(response.to_s)#page.body.to_s
       state_array.each do |k|
         k.delete('Selected')
         @states[k['Value']] = k['Text']
@@ -47,13 +50,14 @@ class NamazVaktiController < ApplicationController
 
   def ilceler
     cached = Rails.cache.fetch("ilceler_#{params[:state_id]}", expires_in: 4.weeks) do
-      url = URI.parse("http://www.diyanet.gov.tr/PrayerTime/FillCity?itemId=#{params[:state_id]}")
-      req = Net::HTTP::Get.new(url.to_s)
-      page = Net::HTTP.start(url.host, url.port) { |http|
-        http.request(req)
-      }
+      #url = URI.parse("http://www.diyanet.gov.tr/PrayerTime/FillCity?itemId=#{params[:state_id]}")
+      #req = Net::HTTP::Get.new(url.to_s)
+      #page = Net::HTTP.start(url.host, url.port) { |http|
+      #  http.request(req)
+      #}
+      response = RestClient.get("http://www.diyanet.gov.tr/PrayerTime/FillCity?itemId=#{params[:state_id]}")
       @cities = {}
-      city_array = JSON.parse(page.body.to_s)
+      city_array = JSON.parse(response)
       city_array.each do |k|
         k.delete('Selected')
         @cities[k['Value']] = k['Text']
@@ -70,34 +74,50 @@ class NamazVaktiController < ApplicationController
       expire = 3.days # Haftalik icin
     end
     cached = Rails.cache.fetch("vakitler_#{params[:country_id]}_#{params[:state_id]}_#{params[:city_id]}_#{period}", expires_in: expire) do
-      getUrl = URI.parse("http://www.diyanet.gov.tr/tr/PrayerTime/WorldPrayerTimes")
-      postUrl = URI.parse('http://www.diyanet.gov.tr/tr/PrayerTime/PrayerTimesList')
-      postResponse = Net::HTTP.start(getUrl.host, getUrl.port) { |http|
-        # Get Security parameters
-        getReq = Net::HTTP::Get.new(getUrl.to_s)
-        getResponse = http.request(getReq)
-        cookies = getResponse.response['set-cookie']
-        getDoc = Hpricot(getResponse.body)
-        sfidElem = getDoc.at("input[@name='as_sfid']")
-        fidElem = getDoc.at("input[@name='as_fid']")
-        if !sfidElem.nil?
-          as_sfid = sfidElem["value"]
-        end
-        if !fidElem.nil?
-          as_fid = fidElem["value"]
-        end
-        #puts "Sec Params:#{as_sfid}  #{as_fid}"
-        # Get Times Table
-        postReq =  Net::HTTP::Post.new(postUrl.to_s)
-        postReq['Cookie'] = cookies
-        postReq.set_form_data( {'Country' => params[:country_id],
-                                'State' => params[:state_id],
-                                'City' => params[:city_id],
-                                'period' => period,
-                                'as_sfid' => as_sfid,
-                                'as_fid' => as_fid } )
-        http.request(postReq)
-      }
+      #getUrl = URI.parse("http://www.diyanet.gov.tr/tr/PrayerTime/WorldPrayerTimes")
+      #postUrl = URI.parse('http://www.diyanet.gov.tr/tr/PrayerTime/PrayerTimesList')
+      #postResponse = Net::HTTP.start(getUrl.host, getUrl.port) { |http|
+      #  # Get Security parameters
+      #  getReq = Net::HTTP::Get.new(getUrl.to_s)
+      #  getResponse = http.request(getReq)
+      #  cookies = getResponse.response['set-cookie']
+      #  getDoc = Hpricot(getResponse.body)
+      #  sfidElem = getDoc.at("input[@name='as_sfid']")
+      #  fidElem = getDoc.at("input[@name='as_fid']")
+      #  if !sfidElem.nil?
+      #    as_sfid = sfidElem["value"]
+      #  end
+      #  if !fidElem.nil?
+      #    as_fid = fidElem["value"]
+      #  end
+      #  #puts "Sec Params:#{as_sfid}  #{as_fid}"
+      #  # Get Times Table
+      #  postReq =  Net::HTTP::Post.new(postUrl.to_s)
+      #  postReq['Cookie'] = cookies
+      #  postReq.set_form_data( {'Country' => params[:country_id],
+      #                          'State' => params[:state_id],
+      #                          'City' => params[:city_id],
+      #                          'period' => period,
+      #                          'as_sfid' => as_sfid,
+      #                          'as_fid' => as_fid } )
+      #  http.request(postReq)
+      #}
+      resGet = RestClient.get("http://www.diyanet.gov.tr/tr/PrayerTime/WorldPrayerTimes")
+      getDoc = Hpricot(resGet)
+      sfidElem = getDoc.at("input[@name='as_sfid']")
+      fidElem = getDoc.at("input[@name='as_fid']")
+      if !sfidElem.nil?
+        as_sfid = sfidElem["value"]
+      end
+      if !fidElem.nil?
+        as_fid = fidElem["value"]
+      end
+      postResponse = RestClient.post 'http://www.diyanet.gov.tr/tr/PrayerTime/PrayerTimesList', {'Country' => params[:country_id],
+                                                                                                 'State' => params[:state_id],
+                                                                                                 'City' => params[:city_id],
+                                                                                                 'period' => period,
+                                                                                                 'as_sfid' => as_sfid,
+                                                                                                 'as_fid' => as_fid }
 
       doc = Hpricot(postResponse.body)
       rows = doc.search('//*[@id="body"]/div/div[1]/table/tbody/tr')
