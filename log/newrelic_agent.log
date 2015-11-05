@@ -1130,3 +1130,53 @@ C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/e
   C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/agent.rb:712:in `block in start_worker_thread'
   C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/threading/agent_thread.rb:14:in `call'
   C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/threading/agent_thread.rb:14:in `block in create'
+[2015-11-05 20:34:50 +0200 Emre (54688)] INFO : Starting Agent shutdown
+[2015-11-05 20:34:53 +0200 Emre (75384)] INFO : Starting the New Relic agent in "production" environment.
+[2015-11-05 20:34:53 +0200 Emre (75384)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[2015-11-05 20:34:53 +0200 Emre (75384)] INFO : Reading configuration from config/newrelic.yml (D:/RubymineProjects/ezanvakti)
+[2015-11-05 20:34:53 +0200 Emre (75384)] INFO : Environment: production
+[2015-11-05 20:34:53 +0200 Emre (75384)] INFO : Dispatcher: webrick
+[2015-11-05 20:34:53 +0200 Emre (75384)] INFO : Application: My Application
+[2015-11-05 20:34:53 +0200 Emre (75384)] WARN : Failed to determine processor count, assuming 1
+[2015-11-05 20:34:53 +0200 Emre (75384)] INFO : Installing Net instrumentation
+[2015-11-05 20:34:53 +0200 Emre (75384)] INFO : Installing deferred Rack instrumentation
+[2015-11-05 20:34:53 +0200 Emre (75384)] INFO : Installing Rack::Builder middleware instrumentation
+[2015-11-05 20:34:53 +0200 Emre (75384)] INFO : Installing Rails 3+ middleware instrumentation
+[2015-11-05 20:34:53 +0200 Emre (75384)] INFO : Installing Rails 4 Controller instrumentation
+[2015-11-05 20:34:54 +0200 Emre (75384)] INFO : Installing Rails 4 view instrumentation
+[2015-11-05 20:34:54 +0200 Emre (75384)] INFO : Installing Rails 4 Error instrumentation
+[2015-11-05 20:34:54 +0200 Emre (75384)] INFO : Finished instrumentation
+[2015-11-05 20:35:03 +0200 Emre (75384)] INFO : Starting Agent shutdown
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Starting the New Relic agent in "production" environment.
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Reading configuration from config/newrelic.yml (D:/RubymineProjects/ezanvakti)
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Environment: production
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Dispatcher: webrick
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Application: My Application
+[2015-11-05 20:36:36 +0200 Emre (70536)] WARN : Failed to determine processor count, assuming 1
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Installing Net instrumentation
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Installing deferred Rack instrumentation
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Installing Rack::Builder middleware instrumentation
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Installing Rails 3+ middleware instrumentation
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Installing Rails 4 Controller instrumentation
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Installing Rails 4 view instrumentation
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Installing Rails 4 Error instrumentation
+[2015-11-05 20:36:36 +0200 Emre (70536)] INFO : Finished instrumentation
+[2015-11-05 20:36:45 +0200 Emre (70536)] INFO : Doing deferred dependency-detection before Rack startup
+[2015-11-05 20:36:46 +0200 Emre (70536)] INFO : Reporting to: https://rpm.newrelic.com/accounts/742320/applications/4870670
+[2015-11-05 20:36:46 +0200 Emre (70536)] ERROR : Unhandled error in worker thread, disconnecting this agent process:
+[2015-11-05 20:36:46 +0200 Emre (70536)] ERROR : Errno::EBADF: Bad file descriptor
+[2015-11-05 20:36:46 +0200 Emre (70536)] ERROR : Debugging backtrace:
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/event_loop.rb:186:in `write_nonblock'
+  C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/event_loop.rb:186:in `wakeup'
+  C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/event_loop.rb:171:in `fire'
+  C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/event_loop.rb:166:in `on'
+  C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/agent.rb:616:in `create_and_run_event_loop'
+  C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/agent.rb:689:in `block (2 levels) in deferred_work!'
+  C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent.rb:431:in `disable_all_tracing'
+  C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/agent.rb:686:in `block in deferred_work!'
+  C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/agent.rb:666:in `catch_errors'
+  C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/agent.rb:685:in `deferred_work!'
+  C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/agent.rb:712:in `block in start_worker_thread'
+  C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/threading/agent_thread.rb:14:in `call'
+  C:/Ruby21/lib/ruby/gems/2.1.0/gems/newrelic_rpm-3.14.0.305/lib/new_relic/agent/threading/agent_thread.rb:14:in `block in create'

@@ -383,3 +383,12 @@ Mysql2::Error (Can't connect to MySQL server on '127.0.0.1' (10061)):
   C:/Ruby21/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
 
 
+I, [2015-11-05T20:36:46.729371 #70536]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-05 20:36:46 +0200
+I, [2015-11-05T20:36:46.732372 #70536]  INFO -- : Processing by NamazVaktiController#index as HTML
+I, [2015-11-05T20:36:46.745381 #70536]  INFO -- :   Rendered namaz_vakti/index.html.erb within layouts/application (1.0ms)
+I, [2015-11-05T20:36:52.476084 #70536]  INFO -- : Completed 200 OK in 5743ms (Views: 5734.7ms)
+I, [2015-11-05T20:36:52.576153 #70536]  INFO -- : Started GET "/assets/application-3a0026b92f65b7fe7b50350a98f59f68.css" for 127.0.0.1 at 2015-11-05 20:36:52 +0200
+I, [2015-11-05T20:36:52.579656 #70536]  INFO -- : Started GET "/assets/bootstrap.min-3cf0e6ffedba7cab02ea8f4a540a46de.css" for 127.0.0.1 at 2015-11-05 20:36:52 +0200
+I, [2015-11-05T20:36:52.585676 #70536]  INFO -- : Started GET "/assets/application-35c786b08bef0937c0b772b5022516f4.js" for 127.0.0.1 at 2015-11-05 20:36:52 +0200
+I, [2015-11-05T20:36:52.589679 #70536]  INFO -- : Started GET "/assets/bootstrap-theme.min-86630ec7c3d5e22a0afc0175fba43a22.css" for 127.0.0.1 at 2015-11-05 20:36:52 +0200
+I, [2015-11-05T20:36:52.594682 #70536]  INFO -- : Started GET "/assets/bootstrap.min-47402b921ef01ea1a39a9bda66ace138.js" for 127.0.0.1 at 2015-11-05 20:36:52 +0200
